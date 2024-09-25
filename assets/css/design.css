@@ -1,0 +1,95 @@
+/* TODO:  backgroud color FFE6E6*/
+body {
+    background-color: #FFE6E6;
+    width: 95vw;
+}
+
+/* header and footer */
+header,
+footer {
+    background-color: #AD88C6;
+    width: 95vw;
+}
+
+
+/* navbar */
+.nav-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* TODO: link in navbar*/
+.nav-link {
+    background-color: rgba(116, 105, 182,0.5);
+    text-decoration: none;
+}
+
+
+/* main */
+/* TODO: background of article or cards #E1AFD1*/
+.blog-cards {
+    background-color: #E1AFD1 ;
+    border:  2px purple solid;
+    box-sizing: border-box;
+    width: 90vw;
+    padding: 25px;
+}
+
+
+.blog-cards:hover {
+    transform: scale(1.1);
+}
+
+
+/* TODO: style figure inside card*/
+.card-img {
+    width:auto;
+    background-color: aliceblue;
+    height: auto;
+}
+
+
+/* TODO: image inside figure in  card*/
+.image {
+    width: 100%;
+}
+
+
+/* TODO: link Read more*/
+.read-more {
+    background-color: rgba(116, 105, 182,0.5);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+.read-more:hover {
+    background-color: rgba(116, 105, 182,0.8);
+    color:antiquewhite;
+}
+
+
+/* TODO: class into anchor tag that inside card*/
+.read-more:active {
+    box-shadow: 0 0 0 5px rgba(116, 105, 182,1);
+}
+
+
+
+/* TODO: */
+/* TODO:  font style and color from google font https://fonts.google.com/selection/embed
+     I change font-size in it*/
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+
+   /* TODO: font header*/
+.title-site {
+    color:rgb(19, 12, 2);
+    font: 700 2rem;
+}

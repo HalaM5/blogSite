@@ -1,0 +1,71 @@
+/*text-align font-size color line height shorthand font: bold font-size/line-height family*/
+
+/* TODO: Apply font family :Roboto Condensed on all elements */
+*{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+/* TODO: Font head tags h1 , h2 ,h3 and h4*/
+h1 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.3rem;
+    color:rgba(42, 37, 37, 0.86)
+}
+
+
+h4 {
+    font-size: 0.75rem;
+    color:rgb(95, 94, 94)
+}
+
+
+/*h3 with class="subhead" in blog page */ 
+/* TODO: put h3 in center*/
+.subhead {
+    text-align: center;
+}
+
+
+/*font figurecaption*/
+figcaption {
+    font-size: 1rem;
+    color:rgb(95, 94, 94)
+}
+
+
+/* Font paragraph tag*/
+p {
+    font-size: 1.45;
+    line-height: 30px;
+}
+
+
+/*font dt and dd tags*/
+dt {
+    font-weight: 666;
+}
+
+
+dd {
+    color:rgb(95, 94, 94);
+    line-height: 30px;
+}
+
+
+/*links and buttons*/
+.nav-link {
+    font-size: 2rem;
+}

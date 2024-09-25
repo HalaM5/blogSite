@@ -1,0 +1,41 @@
+/* background color*/
+/*body*/
+body {
+    background-color: #FFE6E6;
+}
+
+
+/*header*/
+header {
+    background-color: #AD88C6 ;
+}
+
+
+/*nav*/
+.navBar {
+    background-color: aquamarine;
+}
+
+
+/*li in navBar*/
+li {
+    background-color: azure
+}
+
+
+/*article card*/
+.blog-cards {
+    background-color: #E1AFD1;
+}
+
+
+/*subscribe form*/
+form {
+    background-color: #FFE6E6;
+}
+
+
+/*footer*/
+footer {
+    background-color: #AD88C6;
+}

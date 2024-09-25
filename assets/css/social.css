@@ -1,0 +1,28 @@
+/* TODO: organize social icons in footer on homepage*/
+footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+} 
+
+ 
+/* TODO: display flex to adjuist center of Icons*/
+.social-icon {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+
+/* TODO: adjust size of linkedin icon*/
+.linkedIn {
+    width: 70px;
+}
+
+
+.img-icon {
+    width: 100%;
+}

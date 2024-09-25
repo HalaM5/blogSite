@@ -1,0 +1,198 @@
+@import "color.css";
+@import "typograph.css";
+@import "social.css";
+
+
+/* DOTO: design layout of blog page*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*width of content of blog page*/
+header,
+article,
+footer {
+    width: 91vw;
+}
+
+
+/* TODO: layout body tag of page by grid*/
+body {
+    display: grid;
+    grid-template-columns: 92vw;
+    grid-auto-rows: 120px 100px minmax(30%,auto) 70vh;
+    grid-template-areas: 
+    "header"
+    "btn"
+    "picture"
+    "article";
+    justify-content: center;
+}
+
+
+header {
+    grid-area: header;
+    text-align: center;
+    padding-top: 35px;
+}
+
+
+/*button back to home page*/
+.home-btn {
+    grid-area: btn;
+    background-color: aqua;
+    align-self: center;
+    padding: 20px;
+    width: 10rem;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+/*TODO: hover on btn */
+.home-btn:hover {
+    background-color: rgb(77, 135, 135);
+    color: antiquewhite; 
+}
+
+
+/*picture of blog page*/
+.picturee {
+    grid-area: picture;
+    width: 90vw;
+    margin: 100px 0;
+}
+
+
+/* article */
+.artic{
+    grid-area: article;
+    width: 89vw;
+    padding-left: 10px;
+}
+
+
+/*article content*/
+
+/*section tag contains title and article content*/
+.artic-content {
+    padding-left: 10px;
+    margin-bottom: 100px;
+}
+
+
+/*h3*/
+.subhead{
+    margin-bottom: 50px;
+}
+
+
+/*blockquote*/
+blockquote {
+    margin: 50px 0;
+    border-top: 2px rgb(170, 179, 170) solid;
+    box-shadow: 0 10px 0 5px rgb(168, 164, 164);
+}
+
+
+/*asid contains information and avatar of author*/
+.author {
+    width: 87vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items:start;
+    margin-bottom: 100px;
+}
+
+
+/* TODO: adjust figure tag contains author avatar and name*/
+.avatar {
+    width: 80%;
+    display: flex;
+    justify-content:left;
+}
+
+
+.img-avatar{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50;
+    padding: 0;
+}
+
+
+.name-author {
+    position: relative;
+    left: -38px;
+    top: 35px;
+    display: inline;
+    z-index: 5;
+    color: red;
+}
+
+
+/* information about Author */
+.about-author {
+    padding: 10px;
+}
+
+
+/*share social media Icons*/
+.social {
+    display: flex; 
+}  
+
+
+/* TODO: Add media screen to display page on pig screen*/
+@media screen and (min-width: 1020px) {
+    /* size of title of page*/
+    header {
+        padding-top: 20px;
+    }
+
+
+    h1 {
+        font-size: 5rem;
+    }
+
+
+ /*TODO: Display grid in article tag to adjust layout*/
+    .artic {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "info contentt"
+        "info contentt"
+        "social social";
+        gap: 25px;
+    }
+
+
+    .artic-content {
+        grid-area: contentt;
+        width: 100%;
+    }
+
+
+    .author {
+        grid-area: info;
+        width: 100%;
+        border-right: 6px gray solid;
+    }
+
+
+    .social {
+        grid-area: social;
+    }
+
+}

@@ -1,0 +1,129 @@
+@import "color.css";
+@import "typograph.css";
+@import "links-button.css";
+@import "form.css";
+@import "social.css";
+@import "cardslayout.css";
+
+
+/* DOTO: design layout of homepage*/
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 92vw;
+    display: grid;
+    grid-template-columns: 95%;
+    grid-auto-rows: 100px 100px 150px repeat(4,auto) 90px;
+    grid-template-areas: 
+    "head"
+    "nav"
+    "nav"
+    "contentt"
+    "footer";
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    grid-area: head;
+}
+
+
+nav {
+    grid-area: nav;
+}
+
+
+main {
+    grid-area: contentt;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+
+
+/* header and footer */
+header,
+.navBar,
+main,
+footer {
+    width: 91vw;
+}
+
+
+/*layout on medium screen*/
+/* TODO: Add @media screen*/
+@media screen and (min-width:1020px) {
+ /* increase title of page*/   
+    h1 {
+        font-size: 5rem;
+    }
+
+
+ /* TODO: change nav bar to horizantal*/   
+    .navBar {
+        margin-bottom: 100px;
+        background-color: aliceblue;
+    }
+
+
+    .nav-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+ /*li tag in navcontainer represent button*/
+    li {
+        width: 25%;
+        border: none ;
+        padding: 10px;
+    }
+
+
+ /* DOTO: change layout of homepage*/
+ /* TODO: apply grid on section container for cards article*/
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: minmax(50%,auto);
+        grid-template-areas: 
+        "card1 card3"
+        "card2 card4";
+        padding-left: 200px;
+    }
+
+
+    .card {
+        grid-area: card1;
+    }
+
+
+    .cardd {
+        grid-area: card2;
+    }
+
+
+    .carddd {
+        grid-area: card3;
+    }
+
+
+    .blog-cards{
+        width: 70%
+    }
+
+
+ /* TODO:  submit button in form tag */    
+ input[type="submit"] {
+    max-width: 10% 
+ }
+ 
+}

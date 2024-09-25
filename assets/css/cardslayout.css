@@ -1,0 +1,47 @@
+/* cards article in homepage*/
+
+/*section contain on article*/
+.container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*article tage inside section*/
+.blog-cards {
+    border:  2px purple solid;
+    width: 88vw;
+    padding: 15px 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TODO: hover on cards of each articles*/
+.blog-cards:hover {
+    transform: scale(1.1);
+}
+
+
+/* TODO: style figure inside card*/
+.card-img {
+    width: 90%;
+    background-color: aliceblue;
+    height: auto;
+}
+
+
+/* TODO: image inside figure in  card*/
+.image {
+    width: 100%;
+}
+
+
+/* TODO: indantaion paragraph in cards*/
+.indent-para {
+    padding-left: 10px;
+}
